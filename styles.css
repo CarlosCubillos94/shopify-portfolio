@@ -60,3 +60,6 @@ h1,h2,h3{font-family:"Big Shoulders",Impact,sans-serif;font-weight:800;text-tran
 .js .hero-title .w.in{opacity:1;transform:none}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{transition-duration:.01ms!important;animation:none!important;scroll-behavior:auto!important}
 .js .reveal,.js .hero-title .w{opacity:1;transform:none;filter:none}}
+.rcard{position:relative;overflow:hidden;min-height:260px;align-content:end}
+.rcard::before{content:attr(data-mono);position:absolute;right:-.05em;top:-.12em;font:800 clamp(7rem,16vw,11rem)/1 "Big Shoulders",sans-serif;color:var(--olive);opacity:.12;pointer-events:none}
+.rcard .note{display:inline-block;justify-self:start;border:1px solid var(--line);padding:.2rem .6rem;border-radius:var(--r)}
