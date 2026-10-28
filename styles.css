@@ -31,9 +31,6 @@ h1,h2,h3{font-family:"Big Shoulders",Impact,sans-serif;font-weight:800;text-tran
 .sec-head{display:grid;gap:1rem;margin-bottom:clamp(2rem,5vw,3.5rem)}
 .sec-head h2,.contact h2{font-size:var(--step-head)}
 .sec-lead{max-width:56ch;color:var(--mute)}
-.real{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.25rem}
-.rcard{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:clamp(1.5rem,3vw,2.5rem);display:grid;gap:.75rem}
-.rcard h3{font-size:clamp(2.5rem,6vw,4rem)}.note{font-size:var(--step-small);color:var(--mute)}
 .demos{display:grid;gap:clamp(3rem,7vw,5rem)}
 .demo{display:grid;grid-template-columns:1.5fr 1fr;gap:clamp(1.5rem,4vw,3rem);align-items:center}
 .demo:nth-child(even) .shot{order:2}
@@ -60,6 +57,3 @@ h1,h2,h3{font-family:"Big Shoulders",Impact,sans-serif;font-weight:800;text-tran
 .js .hero-title .w.in{opacity:1;transform:none}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{transition-duration:.01ms!important;animation:none!important;scroll-behavior:auto!important}
 .js .reveal,.js .hero-title .w{opacity:1;transform:none;filter:none}}
-.rcard{position:relative;overflow:hidden;min-height:260px;align-content:end}
-.rcard::before{content:attr(data-mono);position:absolute;right:-.05em;top:-.12em;font:800 clamp(7rem,16vw,11rem)/1 "Big Shoulders",sans-serif;color:var(--olive);opacity:.12;pointer-events:none}
-.rcard .note{display:inline-block;justify-self:start;border:1px solid var(--line);padding:.2rem .6rem;border-radius:var(--r)}
